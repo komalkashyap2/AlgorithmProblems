@@ -18,6 +18,7 @@ namespace AlgorithmProblems
             Console.WriteLine("4.Bubble Sort");
             Console.WriteLine("5.Merge sort");
             Console.WriteLine("6.Anagram Detection Example");
+            Console.WriteLine("7.Prime number in range");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -63,6 +64,13 @@ namespace AlgorithmProblems
                     ///For UseCase6
                 case 6:
                     AnagramDetection.FindAnagram();
+                    break;
+
+                ///For UseCase7
+                case 7:
+                    Console.WriteLine("The prime numbers are : ");
+                    PrimeNumInRange primeNum = new PrimeNumInRange();
+                    primeNum.FindPrime();
                     break;
 
                 default:
