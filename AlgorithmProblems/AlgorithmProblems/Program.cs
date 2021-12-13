@@ -16,6 +16,7 @@ namespace AlgorithmProblems
             Console.WriteLine("2.Binary Search the word from wordlist");
             Console.WriteLine("3.Insertion Sort");
             Console.WriteLine("4.Bubble Sort");
+            Console.WriteLine("5.Merge sort");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -49,6 +50,13 @@ namespace AlgorithmProblems
                     int[] arr1 = { 10, 2, 14, 3, 1, 5, 9 };
                     BubbleSort.BubbleSortInArray(arr1);
                     BubbleSort.PrintArray(arr1);
+                    break;
+
+                    ///For UseCase5
+                case 5:
+                    int[] arr2 = { 32, 12, 9, 65, 24, 5 };
+                    MergeSort.Sort(arr2, 0, arr2.Length - 1);
+                    MergeSort.PrintArray(arr2);
                     break;
 
                 default:
