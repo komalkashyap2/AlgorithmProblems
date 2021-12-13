@@ -14,6 +14,7 @@ namespace AlgorithmProblems
             Console.WriteLine("****Welcome to Algorithm Programs!!!****");
             Console.WriteLine("1.Permutation Using Recursion");
             Console.WriteLine("2.Binary Search the word from wordlist");
+            Console.WriteLine("3.Insertion Sort");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -32,6 +33,14 @@ namespace AlgorithmProblems
                     List<string> words = new List<string>(txtpath.Split());
                     words.Sort();
                     BinarySearch.BinarySearchWord(words);
+                    break;
+
+                    ///For UseCase3
+                case 3:
+                    InsertionSort insertionSort = new InsertionSort();
+                    int[] arr = { 10, 2, 14, 3, 1, 5, 9 };
+                    insertionSort.Sort(arr);
+                    insertionSort.PrintArray(arr);
                     break;
 
                 default:
